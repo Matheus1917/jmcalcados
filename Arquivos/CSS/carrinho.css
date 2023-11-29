@@ -1,0 +1,256 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600&display=swap');
+
+*{
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    outline: none; border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: .2s linear;
+}
+
+/* Estilos da estrutura HTML */
+
+html{ 
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    scroll-padding-top: 6rem;
+    overflow-x: hidden;
+    background-image: url("../Imagens-2/Background.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+/* Estilos do cabeçalho */
+
+header{
+    position: relative;
+    top: 0; left: 0; right: 0;
+    background: black;
+    padding: 2rem 9%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+    box-shadow: 0 .5rem 1 rem rgba(0,0,0,.1);
+}
+
+header .Logo{
+    font-size: 1.5rem;
+    color: #fff;
+    font-weight: bolder;
+}
+
+header .Categorias a{
+    font-size: 2rem;
+    padding: 0 1.5rem;
+    color: #fff;
+}
+
+header .Categorias a:hover{
+    color: #DF0001;
+}
+
+header .Ícones a{
+    font-size: 1.5rem;
+    color: #fff;
+    margin-left: 1.5rem;
+}
+
+header .Ícones a:hover{
+    color: #DF0001;
+}
+
+/* Estilização do nome do usuário */
+
+h1{
+    font-size: 1.5rem;
+    color: #fff;
+    text-align: right;
+}
+
+.sair{
+    background: #DF0001;
+    display: inline-block;
+    margin-top: 1rem;
+    border-radius: 5rem;
+    color: #fff;
+    padding: .3rem 3.5rem;
+    cursor: pointer;
+    font-size: 1.5rem;
+}
+
+.sair:hover{
+    background: #fff;
+    color: #DF0001;
+}
+
+.wrapper{
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.wrapper h1{
+    padding: 30px 0;
+    text-align: center;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 2rem;
+}
+
+.project{
+    display: flex;
+}
+
+.shop{
+    flex: 75%;
+}
+
+.box{
+    display: flex;
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+    margin-bottom: 20px;
+    background: #00000080;
+    transition: all .6s ease;
+    box-shadow: 4px 3px 2px 1px #000;
+}
+
+.box:hover{
+    transform: scale(1.02);
+}
+
+.box img{
+    object-fit: cover;
+}
+
+.content{
+    padding: 20px;
+    position: relative;
+    width: 100%;
+}
+
+.content h3{
+    color: #fff;
+    margin-bottom: 20px
+}
+
+.content span{
+    color: #DF0001;
+    font-weight: bolder;
+}
+
+.content h4{
+    font-size: 2rem;
+    color: #fff;
+    margin-bottom: 15px
+}
+
+.btn-area{
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px 25px;
+    background-color: #DF0001;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 50px;
+}
+
+.btn-area:hover{
+    background: #fff;
+    color: #DF0001;
+    letter-spacing: 2px;
+    transition: 0.3s all;
+}
+
+.unit{
+    color: #fff;
+}
+
+.unit input{
+    width: 50px;
+    padding: 2px;
+    text-align: center;
+}
+
+.right-bar{
+    flex: 25%;
+    margin-left: 20px;
+    padding: 20px;
+    height: 400px;
+    padding-bottom: 20px;
+    border-radius: 5px;
+    background: #000;
+    box-shadow: 4px 3px 2px 1px #DF0001;
+}
+
+.right-bar hr{
+    size: 30px;
+    border-color: #DF0001;
+}
+
+.right-bar h1{
+    color: #fff;
+}
+
+.right-bar p{
+    display: flex;
+    font-size: .2rem;
+    color: #fff;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    font-size: 20px;
+}
+
+.right-bar a{
+    background-color: #DF0001;
+    border-radius: 50px;
+    color: #fff;
+    font-size: 15px;
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    height: 40px;
+    line-height: 40px;
+    font-weight: 900;
+}
+
+.right-bar a:hover{
+    background: #fff;
+    color: #DF0001;
+    letter-spacing: 2px;
+    transition: 0.3s all;
+}
+
+/* Estilização do footer (rodapé) */
+
+.footer .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(22rem, 1fr));
+    gap: 2rem;
+    color: #fff;
+    background-color: #000;
+    text-align: center;
+    padding-top: 2rem;
+    padding-bottom: 3rem;
+}
+
+.footer .credit{
+    padding: 1rem;
+    padding-top: 1rem;
+    margin-top: .5rem;
+    text-align: center;
+    font-size: 1rem;
+    color: #fff;
+    background: #000;
+    border-top: .1rem solid rgba(0, 0, 0, .1);
+}
+
+.footer .credit span{
+    font-size: 1.2rem;
+    color: #DF0001;
+}

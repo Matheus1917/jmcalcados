@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600&display=swap');
+
+/* Paleta de cores */
+
+:root{
+    --red: #DF0001;
+}
+
+
+*{
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    outline: none; border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: .2s linear;
+}
+
+/* Estilos da estrutura HTML */
+
+html{ 
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    scroll-padding-top: 6rem;
+    overflow-x: hidden;
+    background-image: url("../Imagens-2/Background.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+/* Estilização do cabeçalho de produtos */
+
+.Cabeçalho{
+    text-align: center;
+    font-size: 2rem;
+    color: #fff;
+    padding: 1rem;
+    background: #000;
+    margin-bottom: 2rem;
+}
+
+.Cabeçalho span{
+    color: var(--red);
+    font-size: 2rem;
+}
+
+/* Estilos do cabeçalho */
+
+header{
+    position: relative;
+    top: 0; left: 0; right: 0;
+    background: black;
+    padding: 2rem 9%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+    box-shadow: 0 .5rem 1 rem rgba(0,0,0,.1);
+}
+
+header .Logo{
+    font-size: 1.5rem;
+    color: #fff;
+    font-weight: bolder;
+}
+
+header .Ícones a{
+    font-size: 1.5rem;
+    color: #fff;
+    margin-left: 1.5rem;
+}
+
+header .Ícones a:hover{
+    color: #DF0001;
+}
+
+/* Estilização do nome do usuário */
+
+h1{
+    font-size: 1.5rem;
+    color: #fff;
+    text-align: right;
+}
+
+.Ícones h1 i{
+    font-size: 17px;
+}
+
+.sair{
+    color: #fff;
+    background: #DF0001;
+    display: inline-block;
+    margin-top: 1rem;
+    border-radius: 5rem;;
+    padding: .1rem 2rem;
+    cursor: pointer;
+    font-size: 1.5rem;
+}
+
+.sair:hover{
+    background: #fff;
+    color: #DF0001;
+}
+
+/* Estilos dos container interno de login */
+
+.container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+/* Estilos dos card externo de login */
+
+.card{
+    background-color: #00000080;
+    padding: 30px;
+    border-radius: 5%;
+    box-shadow: 4px 3px 2px 1px #DF0001;
+}
+
+.card h1{
+    color: #fff;
+}
+
+.card span{
+    color: #fff;
+    font-size: 1.5rem;
+    padding-bottom: 20px;
+}
+
+.card p{
+    color: #fff;
+    font-size: 1.5rem;
+    padding-bottom: 10%;
+}
+
+.card iframe{
+    border-radius: 50px;
+
+}
+
+
+/* Estilos do cabeçalho da box de login */
+
+h1{
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+/* Estilização do footer (rodapé) */
+
+.footer .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(22rem, 1fr));
+    gap: 2rem;
+    color: #fff;
+    background-color: #000;
+    text-align: center;
+    padding-top: 2rem;
+    padding-bottom: 3rem;
+}
+
+.footer .box-container .box h3{
+    font-size: 2.5rem;
+    color: #DF0001;
+    padding: 1.5rem;
+}
+
+.footer .box-container .box h2{
+    font-size: 1.3rem;
+    color: #fff;
+    text-align: justify;
+}
+
+.footer .box-container .box a{
+    display: block;
+    font-size: 1.5rem;
+    color: #fff;
+    padding: .5rem;
+    text-decoration: none;
+}
+
+.footer .box-container .box a i{
+    padding-right: .5rem;
+    color: #fff;
+}
+
+.footer .box-container .box a:hover{
+    color: #DF0001;
+}
+
+.footer .box-container .box a:hover i{
+    color: #DF0001;
+}
+
+.footer .credit{
+    padding: 1rem;
+    padding-top: 1rem;
+    margin-top: .5rem;
+    text-align: center;
+    font-size: 1.5rem;
+    color: #fff;
+    background: #000;
+    border-top: .1rem solid rgba(0, 0, 0, .1);
+}
+
+.footer .credit span{
+    font-size: 1.5rem;
+    color: #DF0001;
+}

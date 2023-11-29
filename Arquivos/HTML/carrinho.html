@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JM Calçados - Meu Carrinho</title>
+    <link rel="shortcut icon" href="../Imagens-2/Icon.png" />
+
+    <!-- Fonte padrão para o corpo do texto -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+    <!-- Documeto de customização do CSS -->
+    <link rel="stylesheet" href="../CSS/carrinho.css" />
+    <!-- Importação de ícones -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+
+    <header>
+
+        <a href="#" class="Logo"> <i class="fa-solid fa-shoe-prints"></i> JM Calçados </a>
+
+        <nav class="Categorias">
+            <a href="#sapatos">Sapatos</a>
+            <a href="#saltos">Saltos</a>
+            <a href="#tênis">Tênis</a>
+            <a href="#botas">Botas</a>
+            <a href="#chinelos">Chinelos</a>
+            <a href="#sapatilhas">Sapatilhas</a>
+        </nav>
+
+        <div class="Ícones"> <!-- Lateral e acesso do usuário -->
+            <a href="#" class="Usuário">
+                <h1><i class="fa-solid fa-user" style="color:  #fff;" id="logado"></i></h1>
+                <button class="sair" onclick="sair()"> Sair </button>
+                <a href="#" class="Carrinho"> <i class="fa-solid fa-cart-shopping" style="color:  #fff;"></i> Carrinho </a>
+        </div>
+
+    </header>
+
+    <div class="wrapper">
+
+        <h1> Meu Carrinho </h1>
+
+        <div class="project">
+
+            <div class="shop">
+            <div class="box">
+                <img src="../Imagens-2/Produto-1.jpg" alt="">
+                <div class="content">
+                <h3>TÊNIS SNEAKER MASCULINO CANO ALTO ADVENTURE&nbsp;&nbsp;<span>(BLACK DESERT)</span></h3>
+                <h4>R$ 229,59</h4>
+                <p class="unit">Quantidade:&nbsp;&nbsp;&nbsp;<input value="2"></p>
+                <p class="btn-area">
+                    <i class="fa fa-trash"></i>
+                    <a class="btn2"> Remover </a>
+                </p>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="../Imagens-2/Produto-5.jpeg" alt="">
+            <div class="content">
+            <h3>BOTA COTURNO SALTO GROSSO EM COURO&nbsp;&nbsp;<span>(GOTHIC WOMAN)</span></h3>
+            <h4>R$ 79,99</h4>
+            <p class="unit">Quantidade:&nbsp;&nbsp;&nbsp;<input value="1"></p>
+            <p class="btn-area">
+                <i class="fa fa-trash"></i>
+                <a class="btn2"> Remover </a>
+            </p>
+        </div>
+    </div>
+    
+
+    <div class="box">
+        <img src="../Imagens-2/Produto-9.jpg" alt="">
+        <div class="content">
+        <h3>SAPATO SOCIAL MASCULINO COURVIN EXECUTIVE&nbsp;&nbsp;<span>(PERFECT BUSINESS)</span></h3>
+        <h4>R$ 189,99</h4>
+        <p class="unit">Quantidade:&nbsp;&nbsp;&nbsp;<input value="1"></p>
+        <p class="btn-area">
+            <i class="fa fa-trash"></i>
+            <a class="btn2"> Remover </a>
+        </p>
+        </div>
+    </div>
+
+    </div>
+
+    <div class="right-bar">
+        <h1>SubTotal:</h1>
+        <p><span>Produtos:</span> <span>R$729,16</span></p>
+        <hr>
+        <p><span>Frete:</span> <span>R$14,50</span></p>
+        <hr>
+        <p><span>Total:</span> <span>R$743,66</span></p>
+
+        <a href="../HTML/pagamento.html"><i class="fa fa-shopping-cart"></i> Confirmar </a>
+    </div>
+
+    </div>
+
+</div>
+
+<div class="footer"> <!-- Rodapé da página -->
+
+    <div class="credit"> Desenvolvido por <span> Matheus Fagundes </span> | Todos os direitos reservados © </div>
+
+</div>
+
+<!-- Documeto de customização do Javascript -->
+<script type="text/javascript" src="../Javascript/carrinho.js"></script>
+
+</body>
+
+</html>

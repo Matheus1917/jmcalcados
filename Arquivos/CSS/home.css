@@ -1,0 +1,369 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600&display=swap');
+
+/* Paleta de cores */
+
+:root{
+    --red: #DF0001;
+}
+
+
+*{
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    outline: none; border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: .2s linear;
+}
+
+/* Estilos da estrutura HTML */
+
+html{ 
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    scroll-padding-top: 6rem;
+    overflow-x: hidden;
+    background-image: url("../Imagens-2/Background.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+section{
+    padding: 2rem 9%;
+}
+
+.Banner{
+    background-position: center;
+}
+
+/* Estilização do cabeçalho de produtos */
+
+.Cabeçalho{
+    text-align: center;
+    font-size: 2rem;
+    color: #fff;
+    padding: 1rem;
+    background: #000;
+    margin-bottom: 2rem;
+}
+
+.Cabeçalho span{
+    color: var(--red);
+    font-size: 2rem;
+}
+
+/* Estilos do cabeçalho */
+
+header{
+    position: relative;
+    top: 0; left: 0; right: 0;
+    background: black;
+    padding: 2rem 9%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+    box-shadow: 0 .5rem 1 rem rgba(0,0,0,.1);
+}
+
+header .Logo{
+    font-size: 1.5rem;
+    color: #fff;
+    font-weight: bolder;
+}
+
+header .Categorias a{
+    font-size: 2rem;
+    padding: 0 1.5rem;
+    color: #fff;
+}
+
+header .Categorias a:hover{
+    color:var(--red);
+}
+
+header .Ícones a{
+    font-size: 1.5rem;
+    color: #fff;
+    margin-left: 1.5rem;
+}
+
+header .Ícones a:hover{
+    color: var(--red)
+}
+
+/* Estilos do Banner */
+
+.Banner{
+    display:flex;
+    align-items: center;
+    min-height: 45vh;
+    background-image: url("../Imagens-2/Banner.jpg");
+}
+
+.Banner .Conteúdo{
+    max-width: 50rem;
+}
+
+.Banner .Conteúdo h3{
+    font-size: 3rem;
+    color: #fff;
+    padding: 3rem;
+}
+
+/* Estilos dos ícones de compra */
+
+.Ícones-Compra{
+    background: #000;
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.Ícones-Compra .Icones{
+    background: #DF0001;
+    border: 1rem solid rgba(0,0,0,.1);
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    flex: 1 1 25rem;
+}
+
+.Ícones-Compra .Icones img{
+    color: #fff;
+    height: 5rem;
+    margin-right: 2rem;
+}
+
+.Ícones-Compra .Icones h3{
+    color: #fff;
+    padding-bottom: .5rem;
+    font-size: 1.5rem;
+}
+
+.Ícones-Compra .Icones span{
+    color: #fff;
+    padding-bottom: .5rem;
+    font-size: 1.5rem;
+}
+
+/* Estilos do box de produtos */
+
+.Produtos .Container-Box{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.Produtos .Container-Box .Box{
+    flex:1 1 30rem;
+    box-shadow: 0 .5rem 1.5rem rgba(0,0,0,.1);
+    border-radius: 3rem;
+    border: .3rem solid #fff;
+    position: relative;
+}
+
+.Produtos .Container-Box .Box .Descontos{
+    position: absolute;
+    top: 1rem; left: 1rem;
+    padding: .7rem 1rem;
+    font-size: 2rem;
+    color: var(--red);
+    background: rgba(0,0,0,.1);
+    z-index: 1;
+    border-radius: .5rem;
+}
+
+.Produtos .Container-Box .Box .Imagem{
+    position: relative;
+    text-align: center;
+    padding-top: 2rem;
+    overflow: hidden;
+}
+
+.Produtos .Container-Box .Box .Imagem img{
+    height: 25rem;
+}
+.Produtos .Container-Box .Box:hover .Imagem img{
+    transform: scale(1.1);
+}
+
+.Produtos .Container-Box .Box .Detalhes{
+    padding: 2rem;
+    text-align: center;
+}
+
+.Produtos .Container-Box .Box a{
+    padding-top: 2.1rem;
+    font-size: 1.7rem;
+    color: #fffb08;
+}
+
+.Produtos .Container-Box .Box .Detalhes h3{
+    font-size: 1.5rem;
+    color: #fff;
+}
+
+.Produtos .Container-Box .Box .Detalhes h3:hover{
+    color: #DF0001;
+}
+
+.Produtos .Container-Box .Box .Detalhes span{
+    font-size: 1.5rem;
+    color: #fff;
+}
+
+.Produtos .Container-Box .Box .Detalhes .Preço{
+    font-size: 1.5rem;
+    color:#fff;
+    font-weight: bolder;
+    padding-top: 1rem;
+}
+
+.Produtos .Container-Box .Box .Detalhes .Preço span{
+    font-size: 1.5rem;
+    color: #999;
+    text-decoration: line-through;
+}
+
+/* Estilização do cabeçalho de e-mail */
+
+.E-mail form{
+    text-align: center;
+    font-size: 1.5rem;
+    color: #fff;
+    padding: 1.3rem;
+    margin-top: 2%;
+    position: static;
+    background: #DF0001;
+}
+
+.E-mail form input{
+    padding: .1rem;
+    outline: none;
+    border: 0;
+    font-size: 15px;
+    transition: all 0.5s;
+}
+
+.E-mail form button{
+    font-size: 1.6rem;
+    text-align: center;
+    color: #fff;
+    background: #000;
+    margin-left: .3rem;
+    padding-left: 1.3rem;
+    padding-right: 1.3rem;
+}
+
+.E-mail form button:hover{
+    letter-spacing: 2px;
+    transition: 0.3s all;
+    color:var(--red);
+    background: #fff;
+}
+
+/* Estilização do rodapé */
+
+.footer .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(22rem, 1fr));
+    gap: 2rem;
+    color: #fff;
+    background-color: #000;
+    text-align: center;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.footer .box-container .box h3{
+    font-size: 2.5rem;
+    color: var(--red);
+    padding: 2rem;
+}
+
+.footer .box-container .box h2{
+    font-size: 1.3rem;
+    color: #fff;
+    text-align: justify;
+}
+
+.footer .box-container .box a{
+    display: block;
+    font-size: 1.5rem;
+    color: #fff;
+    padding: 1rem 0;
+}
+
+.footer .box-container .box a i{
+    padding-right: .5rem;
+    color: #fff;
+}
+
+.footer .box-container .box a:hover{
+    padding-right: 2rem;
+}
+
+.footer .box-container .box a:hover i{
+    padding-right: 2rem;
+}
+
+.footer .credit{
+    padding: 1rem;
+    padding-top: 2rem;
+    margin-top: 1rem;
+    text-align: center;
+    font-size: 1.5rem;
+    color: #fff;
+    background: #000;
+    border-top: .1rem solid rgba(0, 0, 0, .1);
+}
+
+.footer .credit span{
+    font-size: 1.5rem;
+    color: #DF0001;
+}
+
+/* Estilização do formulário de cadastro */
+
+.Cadastro .form{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.Cadastro .form .body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: #000;
+}
+
+/* Estilização do nome do usuário */
+
+h1{
+    font-size: 1.5rem;
+    color: #fff;
+    text-align: right;
+}
+
+.sair{
+    background: #DF0001;
+    display: inline-block;
+    margin-top: 1rem;
+    border-radius: 5rem;
+    color: #fff;
+    padding: .3rem 3.5rem;
+    cursor: pointer;
+    font-size: 1.5rem;
+}
+
+.sair:hover{
+    background: #fff;
+    color: #DF0001;
+}

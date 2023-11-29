@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JM Calçados - Pagamento</title>
+    <link rel="shortcut icon" href="../Imagens-2/Icon.png" />
+
+    <!-- Fonte padrão para o corpo do texto -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+    <!-- Documeto de customização do CSS -->
+    <link rel="stylesheet" href="../CSS/pagamento.css" />
+    <!-- Importação de ícones -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+</head>
+
+<body>
+
+    <header>
+
+        <a href="#" class="Logo"> <i class="fa-solid fa-shoe-prints"></i>&nbsp;&nbsp;JM Calçados </a>
+        <h1 class="Complete" style="color: #fff"> PAGAMENTO VIA DÉBITO OU CRÉDITO: </h1>
+ 
+    </header>
+
+    <div class="wrapper">
+
+        <div class="payment_form_wrapper">
+            <div class="payment_form">
+                <div class="back_card">
+                    <div class="stripe"></div>
+                    <div class="input_field">
+                    <label>CVC</label>
+                    <input type="text" name="cvc" class="input" placeholder="XXX" maxlength="3">
+                </div>
+            </div>
+                <div class="front_card">
+                    <div class="pay_sec">
+                        <div class="pay"> <p> Á PAGAR: <span>R$743,66</span></p>
+                        </div>
+                        <div class="mastercard_img">
+                            <img src="../Imagens-2/mastercard.png" alt="master">
+                        </div>
+                    </div>
+                    <div class="form">
+                        <div class="input_top">
+                            <label>NÚMERO DO CARTÃO</label>
+                            <div class="input_grp">
+                                <div class="input_field">
+                                    <input type="text" name="cardNumber" class="input" placeholder="XXXX" maxlength="4">
+                                </div>
+                                <div class="input_field">
+                                    <input type="text" name="cardNumber" class="input" placeholder="XXXX" maxlength="4">
+                            </div>
+                            <div class="input_field">
+                                <input type="text" name="cardNumber" class="input" placeholder="XXXX" maxlength="4">
+                        </div>
+                        <div class="input_field">
+                            <input type="text" name="cardNumber" class="input" placeholder="XXXX" maxlength="4">
+                        </div>
+                    </div>
+                </div>
+                        <div class="input_bottom">
+                            <div class="input_left">
+                                <label>TÍTULAR</label>
+                                <div class="input_field">
+                                    <input type="text" name="cardMarket" class="input" placeholder="IDENTIFICAÇÃO">
+                            </div>
+                            </div>
+                            <div class="input_right">
+                                <label>VALIDADE</label>
+                                <div class="input_grp">
+                                    <div class="input_field">
+                                        <input type="text" name="month" class="input" placeholder="XX" maxlength="2">
+                                    </div>
+                                    <div class="input_field">
+                                        <input type="text" name="date" class="input" placeholder="XX" maxlength="2">
+                                    </div>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+                <a href="../HTML/finalizar.html" class="btn"><i class="fa-solid fa-check" style="color: #ffffff;"></i>
+                    CONFIRMAR</a>
+        </div>
+    </div>
+
+    </body>
+
+    </html>

@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600&display=swap');
+
+:root{
+    --red: #DF0001;
+}
+
+*{
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    outline: none;
+}
+
+body{
+    color: #3e5367;
+    font-size: 14px;
+    background-image: url("../Imagens-2/Background.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+/* Estilos do cabeçalho */
+
+header{
+    position: relative;
+    display: inline;
+    top: 0; left: 0; right: 0;
+    background: black;
+    padding: 2rem 9%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+    box-shadow: 0 .5rem 1 rem rgba(0,0,0,.1);
+}
+
+header .Logo{
+    font-size: 1rem;
+    color: #fff;
+    font-weight: bolder;
+    text-decoration: none;
+}
+
+header .Complete{
+    text-align: center;
+    padding-right: 30%;
+    font-size: 20px;
+    color: #fff;
+}
+
+::placeholder{
+    color: #3e5367;
+}
+
+.wrapper{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.payment_form{
+    position: relative;
+    width: 425px;
+    max-width: 100%;
+    height: 275px;
+}
+
+.payment_form label{
+    display: block;
+    color: #fff;
+    margin-bottom: 8px;
+}
+
+.payment_form .input{
+    padding: 10px 15px;
+    width: 100%;
+    height: 40px;
+    background: #fff;
+    border: 1px solid #000;
+    letter-spacing: 4px;
+}
+
+.payment_form .back_card,
+.payment_form .front_card{
+    background: #00000080;
+    width: 100%;
+    height: 100%;
+    border-radius: 25px;
+}
+
+.payment_form .back_card .stripe{
+    position: absolute;
+    top: 30px;
+    left: 0;
+    width: 100%;
+    height: 55px;
+    background: #3e5367;
+}
+
+.payment_form .back_card .input_field{
+    position: absolute;
+    bottom: 60px;
+    right: 30px;
+    width: 68px;
+}
+
+.payment_form .front_card{
+    padding: 30px;
+    position: absolute;
+    bottom: 40px;
+    left: -125px;
+    box-shadow: 0 0 2px rgb(0,0,0,0.25);
+}
+
+.payment_form .front_card .pay_sec{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.payment_form .front_card .pay_sec .mastercard_img{
+    width: 80px;
+    height: 30px;
+}
+
+.payment_form .front_card .pay_sec .mastercard_img img{
+    width: 100%;
+    height: 100%;
+}
+
+.payment_form .front_card .pay_sec .pay p{
+    color: #fff;
+    font-size: 16px;
+}
+
+.payment_form .front_card .pay_sec .pay p span{
+    font-size: 20px;
+    font-weight: 900;
+    color: #57c72a;
+}
+
+.payment_form .front_card .form .input_top{
+    margin-bottom: 20px;
+}
+
+.payment_form .front_card .form .input_top .input_grp,
+.payment_form .front_card .form .input_bottom{
+    display: flex;
+    justify-content: space-between;
+}
+
+.payment_form .front_card .form .input_grp .input_field{
+    margin-right: 15px;
+}
+
+.payment_form .front_card .form .input_grp .input_field:last-child{
+    margin-right: 0;
+}
+
+.payment_form .front_card .form .input_bottom .input_left{
+    margin-right: 25px;
+}
+
+.payment_form .front_card .form .input_bottom .input_right .input_grp{
+    display: flex;
+    justify-content: space-between;
+}
+
+.payment_form .front_card .form .input_bottom .input_right .input_grp .input_field{
+    width: 55px;
+}
+
+.btn{
+    margin-top: 30px;
+    width: 225px;
+    padding: 15px 20px;
+    background: #DF0001;
+    color: #fff;
+    text-align: center;
+    border-radius: 5px;
+    cursor: pointer;
+    letter-spacing: 3px;
+    text-decoration: none;
+}
+
+.btn:hover{
+    background: #fff;
+    color: #DF0001;
+    letter-spacing: 2px;
+    transition: 0.3s all;
+}
+
+

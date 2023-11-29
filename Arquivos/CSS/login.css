@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+}
+
+body{
+    background-image: url("../Imagens-2/Background.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/* Estilos do cabeçalho */
+
+header{
+    position: relative;
+    top: 0; left: 0; right: 0;
+    background: black;
+    padding: 2rem 9%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+    box-shadow: 0 .5rem 1 rem rgba(0,0,0,.1);
+}
+
+header .Logo{
+    font-size: 1rem;
+    color: #fff;
+    font-weight: bolder;
+    text-decoration: none;
+}
+
+/* Estilos dos container interno de login */
+
+.container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+/* Estilos dos card externo de login */
+
+.card{
+    background-color: #00000080;
+    padding: 30px;
+    border-radius: 5%;
+    box-shadow: 4px 3px 2px 1px #DF0001;
+    width: 350px;
+}
+
+/* Estilos do cabeçalho da box de login */
+
+h1{
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.label-float input{
+    width: 100%;
+    padding: 5px 5px;
+    display: inline-block;
+    border: 0;
+    border-bottom: 2px solid #ffffff;
+    background-color: transparent;
+    outline: none;
+    min-width: 180px;
+    font-size: 16px;
+    transition: all .3s ease-out;
+}
+
+.label-float{
+    position: relative;
+    padding-top: 13px;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.label-float input:focus{
+    border-bottom: 2px solid #acacac;
+}
+
+.label-float label{
+    pointer-events: none;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    margin-top: 13px;
+    transition: all .3s ease-out;
+}
+
+.label-float input:focus + label,
+.label-float input:valid + label{
+    font-size: 13px;
+    margin-top: 0;
+    color: #acacac;
+}
+
+/* Estilos do botão de acesso */
+
+button{
+    background-color: #DF0001;
+    border-color: #fff;
+    padding: 7px;
+    font-weight: bold;
+    font-size: 15px;
+    margin-top: 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    outline: none;
+    transition: all .2s ease-out;
+}
+
+button:hover{
+    background-color: #fff;
+    color: #000;
+}
+
+.justify-center{
+    display: flex;
+    justify-content: center;
+}
+
+/* Estilos do cabeçalho inferior de cadastro */
+
+hr{
+    margin-top: 10%;
+    margin-bottom: 10%;
+    width: 100%;
+}
+
+p{
+    text-align: center;
+}
+
+a{
+    color: #DF0001;
+    font-weight: bold;
+}
+
+a:hover{
+    color: #fff;
+}
+
+/* Estilos do olho de mostrar senha */
+
+.fa-eye{
+    position: absolute;
+    top: 20px;
+    right: 10px;
+    cursor: pointer;
+    color: #fff;
+}
+
+/* Estilos da mensagem de acesso negado */
+
+#msgErro{
+    text-align: center;
+    color: #DF0001;
+    background-color: #ffbbbb;
+    padding: 10px;
+    border-radius: 5px;
+    display: none;
+}
+
+/* Estilização do footer (rodapé) */
+
+.footer .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(22rem, 1fr));
+    gap: 2rem;
+    color: #fff;
+    background-color: #000;
+    text-align: center;
+    padding-top: 2rem;
+    padding-bottom: 3rem;
+}
+
+.footer .box-container .box h3{
+    font-size: 1.5rem;
+    color: #DF0001;
+    padding: 1.5rem;
+}
+
+.footer .box-container .box h2{
+    font-size: 1rem;
+    color: #fff;
+    text-align: justify;
+}
+
+.footer .box-container .box a{
+    display: block;
+    font-size: 1rem;
+    color: #fff;
+    padding: .5rem;
+    text-decoration: none;
+}
+
+.footer .box-container .box a i{
+    padding-right: .5rem;
+    color: #fff;
+}
+
+.footer .box-container .box a:hover{
+    color: #DF0001;
+}
+
+.footer .box-container .box a:hover i{
+    color: #DF0001;
+}
+
+.footer .credit{
+    padding: 1rem;
+    padding-top: 1rem;
+    margin-top: .5rem;
+    text-align: center;
+    font-size: 1rem;
+    color: #fff;
+    background: #000;
+    border-top: .1rem solid rgba(0, 0, 0, .1);
+}
+
+.footer .credit span{
+    font-size: 1.2rem;
+    color: #DF0001;
+}

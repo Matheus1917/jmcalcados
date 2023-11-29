@@ -1,0 +1,280 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+}
+
+body{
+    background-image: url("../Imagens-2/Background.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/* Estilos do cabeçalho */
+
+header{
+    position: relative;
+    background: black;
+    padding-top: 1px;
+    padding-bottom: 15px;
+    padding-left: 90px;
+    padding-right: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .Logo{
+    font-size: 1rem;
+    color: #fff;
+    font-weight: bolder;
+    text-decoration: none;
+}
+
+header .Categorias a{
+    font-size: 1.2rem;
+    padding: 0 1.5rem;
+    color: #fff;
+    text-decoration: none;
+    padding-top: 2px;
+}
+
+header .Categorias a:hover{
+    color: #DF0001;
+}
+
+header .Ícones a{
+    font-size: 1rem;
+    color: #fff;
+    margin-left: 1.5rem;
+    text-decoration: none;
+}
+
+header .Ícones a:hover{
+    color: #DF0001;
+}
+
+/* Estilização do nome do usuário */
+
+h1{
+    font-size: 1.5rem;
+    color: #fff;
+    text-align: right;
+}
+
+.Ícones h1 i{
+    font-size: 17px;
+}
+
+.sair{
+    color: #fff;
+    background: #DF0001;
+    display: inline-block;
+    margin-top: 1rem;
+    border-radius: 5rem;;
+    padding: .1rem 2rem;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.sair:hover{
+    background: #fff;
+    color: #DF0001;
+}
+
+/* Estilos do box ampliado do produto */
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: calc(100vh -85%);
+    gap: 100px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.Items{
+    align-self: center;
+}
+
+.Lado-Esquerdo{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.Imagem-Principal{
+    max-width: 400px;
+}
+
+.Imagem-Principal img{
+    width: 120%;
+    border-radius: 20px;
+}
+
+.Lado-Direito{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.Lado-Direito h3{
+    color: #fff;
+    padding: 10px;
+}
+
+.Lado-Direito h3 span{
+    color: #DF0001;
+    display: flex;
+}
+
+.Lado-Direito .Estrelas a{
+    font-size: 1rem;
+    padding-left: 10px;
+    color: #fffb08;
+    text-decoration: none;
+}
+
+.Lado-Direito p{
+    font-size: 14px;
+    padding: 10px;
+}
+
+.Preço{
+    font-size: 16px;
+    font-weight: 700;
+    padding-left: 10px;
+}
+
+.OFF{
+    font-size: 16px;
+    text-decoration: line-through;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    color: #979797;
+}
+
+.Opções{
+    display: flex;
+    gap: 20px;
+}
+
+.Quantidade{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    padding: 10px 20px;
+    background-color: #000;
+    width: fit-content;
+    border-radius: 10px;
+}
+
+.Quantidade span{
+    font-weight: 700;
+    font-size: 12px;
+}
+
+.Menos, .Mais{
+    cursor: pointer;
+    color: #fff;
+    max-width: 10px;
+}
+
+.Add{
+    display: inline-block;
+    text-decoration: none;
+    font-size: 12px;
+    background-color: #DF0001;
+    padding: 10px 10px;
+    font-weight: 700;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    gap: 5px;
+}
+
+.Add:hover{
+    letter-spacing: 2px;
+    transition: 0.3s all;
+}
+
+/* Estilização da linha de separação */
+
+hr{
+    size: 30px;
+    border-color: #DF0001;
+}
+
+
+/* Estilização do footer (rodapé) */
+
+.footer .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(22rem, 1fr));
+    gap: 2rem;
+    color: #fff;
+    background-color: #000;
+    text-align: center;
+    padding-top: 2rem;
+    padding-bottom: 3rem;
+}
+
+.footer .box-container .box h3{
+    font-size: 1.5rem;
+    color: #DF0001;
+    padding: 1.5rem;
+}
+
+.footer .box-container .box h2{
+    font-size: 1rem;
+    color: #fff;
+    text-align: justify;
+}
+
+.footer .box-container .box a{
+    display: block;
+    font-size: 1rem;
+    color: #fff;
+    padding: .5rem;
+    text-decoration: none;
+}
+
+.footer .box-container .box a i{
+    padding-right: .5rem;
+    color: #fff;
+}
+
+.footer .box-container .box a:hover{
+    color: #DF0001;
+}
+
+.footer .box-container .box a:hover i{
+    color: #DF0001;
+}
+
+.footer .credit{
+    padding: 1rem;
+    padding-top: 1rem;
+    margin-top: .5rem;
+    text-align: center;
+    font-size: 1rem;
+    color: #fff;
+    background: #000;
+    border-top: .1rem solid rgba(0, 0, 0, .1);
+}
+
+.footer .credit span{
+    font-size: 1.2rem;
+    color: #DF0001;
+}
+
+
+
+
